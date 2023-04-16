@@ -1,9 +1,76 @@
 <!-- Abraham Caban Rios
 Module 6
+Create a page that displays the first 30 Fibonacci numbers. The output should look something like:
+First 30 Fibonacci Numbers
+1 - 1
+2 - 1
+3 - 2
+4 - 3
+5 - 5
+6 - 8
+7 - 13
+8 – 21
+…
+27 - 196418
+28 - 317811
+29 - 514229
+30 - 832040
+The output numbers in this sequence are the first two and then after the second number the sum of the previous numbers. To correctly output the numbers, use logic similar to the following:
+Declare all variables needed.
+Display your page title.
+Display the first variable with a value of 1, example: “1 – 1”
+Display the second variable with a value of 1, Example: “2 – 1”
+Start a for loop giving the counter a value of 3.
+Test the counter to ensure a value less than or equal to 30.
+Assign a totalizer variable with the added values of the first and second variables.
+Output the values of counter and totalizer each iteration.
+Assign the first variable the value of the second.
+Assign the second variable the value of the totalizer.
+Increment the counter.
+Test the loop again.
+Use document.write to display the output.
+Syntax help: 
+for (counter = 3; counter <= 30; counter++) {
 4/15/2023 -->
 
 <!DOCTYPE html>
-<html>
+<html lang='en'>
+    <head>
+        <title>The first 30 Fibonacci numbers</title>
+    </head>
+    <body>
+        <h1>The first 30 Fibonacci numbers</h1>
+        <script>
+            var counter = 1;
+            var firstvar = 1;
+            var temp = 1;
+
+            document.write(counter + " - " + firstvar + "<br />");
+            document.write((counter + 1) + " - " + (temp) + "<br />");
+            // temp = firstvar
+            // document.write(temp)
+            
+            for (counter = 3; counter <= 30; counter++){
+
+                var totalizer = firstvar + temp;
+                // firstvar += temp;
+                // for (firstvar = 2; counter <= 30; firstvar++) {
+                //     document.write(counter + " - " + firstvar + "<br />");
+                // }
+                document.write(counter + " - " + totalizer + "<br />");
+                // var totalizer = firstvar + temp;
+
+                firstvar = temp;
+                temp = totalizer;
+            }
+
+
+        </script>
+    </body>
+</html>
+
+<!-- <!DOCTYPE html>
+<html lang='en'>
   <head>
     <title>First 30 Fibonacci Numbers</title>
   </head>
@@ -30,4 +97,4 @@ Module 6
   }
 </script>
   </body>
-</html>
+</html> -->
