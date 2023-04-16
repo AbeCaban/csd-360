@@ -1,36 +1,5 @@
 <!-- Abraham Caban Rios
 Module 6
-Create a page that displays the first 30 Fibonacci numbers. The output should look something like:
-First 30 Fibonacci Numbers
-1 - 1
-2 - 1
-3 - 2
-4 - 3
-5 - 5
-6 - 8
-7 - 13
-8 – 21
-…
-27 - 196418
-28 - 317811
-29 - 514229
-30 - 832040
-The output numbers in this sequence are the first two and then after the second number the sum of the previous numbers. To correctly output the numbers, use logic similar to the following:
-Declare all variables needed.
-Display your page title.
-Display the first variable with a value of 1, example: “1 – 1”
-Display the second variable with a value of 1, Example: “2 – 1”
-Start a for loop giving the counter a value of 3.
-Test the counter to ensure a value less than or equal to 30.
-Assign a totalizer variable with the added values of the first and second variables.
-Output the values of counter and totalizer each iteration.
-Assign the first variable the value of the second.
-Assign the second variable the value of the totalizer.
-Increment the counter.
-Test the loop again.
-Use document.write to display the output.
-Syntax help: 
-for (counter = 3; counter <= 30; counter++) {
 4/15/2023 -->
 
 <!DOCTYPE html>
@@ -68,33 +37,3 @@ for (counter = 3; counter <= 30; counter++) {
         </script>
     </body>
 </html>
-
-<!-- <!DOCTYPE html>
-<html lang='en'>
-  <head>
-    <title>First 30 Fibonacci Numbers</title>
-  </head>
-  <body>
-    <script>
-      // Declare variables
-      var firstNum = 1;
-      var seconbdNum = 1;
-      var counter = 3;
-
-  // Display page title
-  document.write("<h1>First 30 Fibonacci Numbers</h1>");
-  
-  // Display first two Fibonacci numbers
-  document.write("1 - 1<br>");
-  document.write("2 - 1<br>");
-  
-  // Loop to generate remaining 28 Fibonacci numbers
-  for (counter; counter <= 30; counter++) {
-    var total = firstNum + num2;
-    document.write(counter + " - " + total + "<br>");
-    firstNum = num2;
-    num2 = total;
-  }
-</script>
-  </body>
-</html> -->
