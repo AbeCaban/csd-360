@@ -1,0 +1,76 @@
+<!-- 
+    
+Abraham Caban Rios
+4/23/2023
+Module 7
+
+A web page that displays a table of the values of 4 to 14 displaying their:
+    Initial value.
+    Square root (with only two digits to the right of the decimal point).
+    The base multiplied to the power of 2.
+    The base multiplied to the power of 3.
+    
+-->
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Table of Values</title>
+    <style>
+		table {
+			border-collapse: collapse;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+            transition: 0.3s;
+            width: 50%;
+			padding: 5px;
+			border: .5px solid rgb(185, 185, 185);
+		}
+		td {
+
+			border: .5px solid rgb(185, 185, 185);
+            text-align: center;
+		}
+
+        th {
+            border-color: black;
+            
+		}
+        #a0, #a2, #a4, #a6, #a8, #a10 {
+            background-color: rgb(192, 192, 243);
+		}
+        
+	</style>
+</head>
+<body>
+	<h1>Table of Values</h1>
+
+	<table>
+		<thead>
+			<tr>
+				<th>Base</th>
+				<th>Square Root</th>
+				<th>Power of2</th>
+				<th>Power of3</th>
+			</tr>
+		</thead>
+		<tbody id="table-body1">
+		</tbody>
+	</table>
+
+	<script>
+		var tableRows = '';
+        var tabrnum = 0;
+		for (var i = 4; i <= 14; i++) {
+			var sqrt = Math.sqrt(i).toFixed(2);
+
+			var baseSquared = Math.pow(i, 2);
+			var baseCubed = Math.pow(i, 3);
+            var tablr = 'a';
+
+			tableRows += '<tr' + ' ' + 'id=' + '\"' + (tablr + (tabrnum++)) + '\"' + '><td>' + i + '</td><td>' + sqrt + '</td><td>' + baseSquared + '</td><td>' + baseCubed + '</td></tr>';
+		}
+
+		document.getElementById('table-body1').innerHTML = tableRows;
+	</script>
+</body>
+</html>
