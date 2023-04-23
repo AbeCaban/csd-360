@@ -16,11 +16,56 @@ for(var i = 0; i < myArray.length; i++){
 <html>
 <head>
 	<title>Favorite Sport Teams</title>
+    <style>
+		table {
+			border-collapse: collapse;
+		}
+		td {
+			padding: 5px;
+			border: 1px solid black;
+		}
+        
+	</style>
 </head>
+<table>
+    <td>
+
+    </td>
+    <td>
+
+    </td>
+</table>
 <body>
 	<h1>Abes Favorite Sport Teams</h1>
+<table>
+    <td>
+        <script>
+            // Create an array of 10 favorite sport teams
+            var spTeamArray = ["Tampa Bay Lightning", "Mets", "Bulls", "Dynasty", "Pirates", "Jin Air Green Wings", "Liquid", "La Roja", "Packers", "Texans"];
 
-	<script>
+            // Print the array in original order
+            console.log("First Order: ");
+            for(var i = 0; i < spTeamArray.length; i++){
+                document.write(spTeamArray[i]+ "<br />");
+                console.log(spTeamArray[i] + "<br />");
+            }
+        </script>
+    </td>
+    <td>
+        <script>
+            // Create an array of 10 favorite sport teams
+            var spTeamArray = ["Tampa Bay Lightning", "Mets", "Bulls", "Dynasty", "Pirates", "Jin Air Green Wings", "Liquid", "La Roja", "Packers", "Texans"];
+
+            // Print the array in reverse order
+		    console.log("Reverse Order: ");
+		    for(var j = spTeamArray.length-1; j >= 0; j--){
+                document.write(spTeamArray[j] + "<br />");
+                console.log(spTeamArray[j] + "<br />");
+		}
+        </script>
+    </td>
+</table>
+	<!-- <script>
 		// Create an array of 10 favorite sport teams
 		var spTeamArray = ["Tampa Bay Lightning", "Mets", "Bulls", "Dynasty", "Pirates", "Jin Air Green Wings", "Liquid", "La Roja", "Packers", "Texans"];
 
@@ -37,6 +82,6 @@ for(var i = 0; i < myArray.length; i++){
             document.write(spTeamArray[j]);
             console.log(spTeamArray[j]);
 		}
-	</script>
+	</script> -->
 </body>
 </html>
