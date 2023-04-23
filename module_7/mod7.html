@@ -1,3 +1,17 @@
+<!-- 
+    
+Abraham Caban Rios
+4/23/2023
+Module 7
+
+A web page that displays an array of 10 favorite sport teams. 
+Using a for loop, print the array first in the original array order and then in reverse order. 
+
+Using for loop headers something like the following:
+for(var i = 0; i < myArray.length; i++){
+    
+-->
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -11,14 +25,14 @@
 		var spTeamArray = ["Lakers", "Warriors", "Raptors", "Spurs", "Celtics", "Heat", "Bulls", "Knicks", "Clippers", "Nets"];
 
 		// Print the array in original order
-		console.log("Original Order:");
+		console.log("First Order: ");
 		for(var i = 0; i < spTeamArray.length; i++){
             document.write(spTeamArray[i]);
             console.log(spTeamArray[i]);
 		}
 
 		// Print the array in reverse order
-		console.log("Reverse Order:");
+		console.log("Reverse Order: ");
 		for(var j = spTeamArray.length-1; j >= 0; j--){
             document.write(spTeamArray[j]);
             console.log(spTeamArray[j]);
