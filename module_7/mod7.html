@@ -18,33 +18,40 @@ for(var i = 0; i < myArray.length; i++){
 	<title>Favorite Sport Teams</title>
     <style>
 		table {
-			border-collapse: collapse;
+			border-collapse: separate;
 		}
 		td {
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+            transition: 0.3s;
+            width: 50%;
+			padding: 5px;
+			border: 1px solid black;
+		}
+
+        th {
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+            transition: 0.3s;
+            width: 50%;
 			padding: 5px;
 			border: 1px solid black;
 		}
         
 	</style>
 </head>
-<table>
-    <td>
-
-    </td>
-    <td>
-
-    </td>
-</table>
 <body>
 	<h1>Abes Favorite Sport Teams</h1>
 <table>
+    <tr>
+        <th>First Order:</th>
+        <th>Reverse Order: </th>
+    </tr>
     <td>
         <script>
             // Create an array of 10 favorite sport teams
             var spTeamArray = ["Tampa Bay Lightning", "Mets", "Bulls", "Dynasty", "Pirates", "Jin Air Green Wings", "Liquid", "La Roja", "Packers", "Texans"];
 
             // Print the array in original order
-            console.log("First Order: ");
+            console.log("First Order: " + "<br />")
             for(var i = 0; i < spTeamArray.length; i++){
                 document.write(spTeamArray[i]+ "<br />");
                 console.log(spTeamArray[i] + "<br />");
@@ -57,7 +64,7 @@ for(var i = 0; i < myArray.length; i++){
             var spTeamArray = ["Tampa Bay Lightning", "Mets", "Bulls", "Dynasty", "Pirates", "Jin Air Green Wings", "Liquid", "La Roja", "Packers", "Texans"];
 
             // Print the array in reverse order
-		    console.log("Reverse Order: ");
+            console.log("Reverse Order: " + "<br />");
 		    for(var j = spTeamArray.length-1; j >= 0; j--){
                 document.write(spTeamArray[j] + "<br />");
                 console.log(spTeamArray[j] + "<br />");
